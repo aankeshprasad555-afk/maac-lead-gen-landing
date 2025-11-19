@@ -341,6 +341,7 @@
             height: 60px;
             border-radius: 50%;
             object-fit: cover;
+            background: #667eea;
         }
         
         .stars {
@@ -550,16 +551,22 @@
             margin-top: 40px;
         }
         
-        .infrastructure-gallery img {
+        .infrastructure-gallery .gallery-item {
             width: 100%;
             height: 250px;
-            object-fit: cover;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             border-radius: 10px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.1);
             transition: transform 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 18px;
+            font-weight: 600;
         }
         
-        .infrastructure-gallery img:hover {
+        .infrastructure-gallery .gallery-item:hover {
             transform: scale(1.05);
         }
         
@@ -695,7 +702,7 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <img src="https://client-uploads.nyc3.digitaloceanspaces.com/images/cadec5a4-641a-4de5-8c47-9e86383693df/2025-11-19T11-27-13-623Z-8e9bf90a.jpg" alt="MAAC - Maya Academy of Advanced Creativity">
+                    <img src="https://client-uploads.nyc3.digitaloceanspaces.com/images/cadec5a4-641a-4de5-8c47-9e86383693df/2025-11-19T11-27-13-623Z-8e9bf90a.jpg" alt="MAAC Logo">
                 </div>
                 <div class="trust-badge">⭐ 500+ Students Placed | Rated 4.9</div>
             </div>
@@ -713,7 +720,7 @@
                     <a href="#form" class="cta-button">Book Your FREE Career Counselling Session →</a>
                 </div>
                 <div class="hero-image">
-                    <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=600&h=400&fit=crop" alt="Student working on animation">
+                    <img src="https://client-uploads.nyc3.digitaloceanspaces.com/images/cadec5a4-641a-4de5-8c47-9e86383693df/2025-11-19T12-26-04-059Z-1b469dc6.jpg" alt="Student working on animation" onerror="this.src='https://via.placeholder.com/600x400/667eea/ffffff?text=Animation+Student'">
                 </div>
             </div>
         </div>
@@ -725,11 +732,11 @@
             <h2>Our Students Work At Top Companies</h2>
             
             <div class="company-logos">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Pixar_logo.svg/320px-Pixar_logo.svg.png" alt="Pixar">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Prime_Focus_logo.svg/320px-Prime_Focus_logo.svg.png" alt="Prime Focus">
-                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/37/Red_Chillies_Entertainment_Logo.svg/320px-Red_Chillies_Entertainment_Logo.svg.png" alt="Red Chillies VFX">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Framestore_logo.svg/320px-Framestore_logo.svg.png" alt="Framestore">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Technicolor_logo.svg/320px-Technicolor_logo.svg.png" alt="Technicolor">
+                <img src="https://logo.clearbit.com/pixar.com" alt="Pixar" onerror="this.style.display='none'">
+                <img src="https://logo.clearbit.com/primefocus.com" alt="Prime Focus" onerror="this.style.display='none'">
+                <img src="https://logo.clearbit.com/redchilliesvfx.com" alt="Red Chillies" onerror="this.style.display='none'">
+                <img src="https://logo.clearbit.com/framestore.com" alt="Framestore" onerror="this.style.display='none'">
+                <img src="https://logo.clearbit.com/technicolor.com" alt="Technicolor" onerror="this.style.display='none'">
             </div>
             
             <h2 style="margin-top: 40px;">Our Track Record Speaks for Itself</h2>
@@ -869,10 +876,10 @@
         <div class="container">
             <h2 class="section-title">World-Class Infrastructure & Facilities</h2>
             <div class="infrastructure-gallery">
-                <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=400&h=250&fit=crop" alt="Computer Lab">
-                <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=400&h=250&fit=crop" alt="Classroom">
-                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=400&h=250&fit=crop" alt="Students Working">
-                <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=400&h=250&fit=crop" alt="Training Session">
+                <div class="gallery-item">🖥️ Modern Computer Labs</div>
+                <div class="gallery-item">👨‍🏫 Professional Classrooms</div>
+                <div class="gallery-item">👥 Collaborative Workspaces</div>
+                <div class="gallery-item">🎓 Training Studios</div>
             </div>
         </div>
     </section>
@@ -884,7 +891,7 @@
             <div class="testimonials">
                 <div class="testimonial">
                     <div class="testimonial-header">
-                        <img src="https://i.pravatar.cc/150?img=12" alt="Rahul Verma" class="testimonial-avatar">
+                        <div class="testimonial-avatar"></div>
                         <div>
                             <div class="stars">⭐⭐⭐⭐⭐</div>
                         </div>
@@ -894,7 +901,7 @@
                 </div>
                 <div class="testimonial">
                     <div class="testimonial-header">
-                        <img src="https://i.pravatar.cc/150?img=45" alt="Priya Sharma" class="testimonial-avatar">
+                        <div class="testimonial-avatar"></div>
                         <div>
                             <div class="stars">⭐⭐⭐⭐⭐</div>
                         </div>
@@ -904,7 +911,7 @@
                 </div>
                 <div class="testimonial">
                     <div class="testimonial-header">
-                        <img src="https://i.pravatar.cc/150?img=33" alt="Ajay Kumar" class="testimonial-avatar">
+                        <div class="testimonial-avatar"></div>
                         <div>
                             <div class="stars">⭐⭐⭐⭐⭐</div>
                         </div>
